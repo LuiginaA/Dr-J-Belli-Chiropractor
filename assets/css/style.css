@@ -714,6 +714,7 @@ li.move-right i {
 @media (max-width: 576px) {
     .top-bar_content i {
         font-size: var(--fs-5);
+        margin-right: 15px;
     }
 
     .top-bar_content p {
@@ -769,32 +770,120 @@ li.move-right i {
     .sub-menu {
         width: 20rem;
         margin-left: -9.5rem;
+        margin-top: -.5rem;
     }
 
     .sub-menu .subMenu {
         margin-left: -.8em;
     }
 
-    .sub-menu .subMenu-menu{
+    .sub-menu .subMenu-menu {
         width: 23rem;
-        margin-left: 1.5em;
+        margin-left: 1.7em;
     } 
 
     .sub-menu::before { 
-        border-bottom: none; 
+            left: 16rem;
+            border: 1.2rem solid transparent;
+            border-bottom-color: #f60b0b;  
+        }
+    }
+
+
+@media (max-width: 480px) {
+    .top-bar_content {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 0px;
+    }
+
+    .top-bar_content i {
+        font-size: var(--fs-5);
+        margin-left: -80px;
+    }
+
+    .top-bar_content p {
+        display: none;
+    }
+
+    ul.nav-list li {
+        line-height: 2.2rem;
+        position: relative;
+        width: 100%;
+        word-spacing: 1.5px;
+    }
+
+    .navbar-nav .active .nav-link,
+    .nav-list a { 
+        color: var(--txt-clr-3);
+        font-family: var(--ff-1);
+        display: block;
+        padding: 0 .4rem;
+        font-size: 12px;
+        font-weight: 400;
+       text-transform: none;
+        transition: all 650ms ease;
+    }
+
+
+
+    .navbar-toggler {
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        margin-bottom: 35px;
+        border: 2px solid #212529;
+        box-shadow: 5px 5px #3e8e41; 
+        max-width: 8em;
+        margin: 3em; 
+    }
+    
+    .navbar-toggler i {
+        width: 20px;
+        font-size: 2.5rem; 
+        font-weight: 600; 
+        justify-self: center;
+        align-self: center; 
+        color: #212529;
+        cursor: pointer;
+    } 
+
+    .sub-menu {
+        width: 20rem;
+        margin-left: -10rem;
+        margin-top: -1.5rem;
+    }
+
+    .sub-menu::before {
+        left: 12rem;
+        border: 1.2rem solid transparent;
+        border-bottom-color: #f60b0b;  
+    }
+
+    .sub-menu .subMenu {
+        width: 20rem;
+        margin-left: -1rem;
+        margin-top: -1.5rem;
     }
 
     .sub-menu .subMenu::before {
-        top: 2rem;
-        border-right-color: #f60b94;
-    }  
+        border: 1.2rem solid transparent;
+        border-right-color: #260bf6;  
+    }
 
-    .sub-menu .subMenu-menu{
-        width: 20rem; 
-    } 
+    .sub-menu .subMenu-menu {
+        width: 20rem;
+        margin-left: 3rem;
+        margin-top: -15.5rem;
+    }
 
     .arrow ion-icon {
         top: 55%;
     } 
-    
+
+    .sub-menu .subMenu {
+        width: 21.75rem;
+    }   
 }
+
