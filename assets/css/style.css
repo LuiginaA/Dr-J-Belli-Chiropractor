@@ -467,7 +467,7 @@ li.btn a {
 
 .arrow ion-icon {
     color: var(--txt-clr-3);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%); 
