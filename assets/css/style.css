@@ -265,7 +265,7 @@ p {
     width: 100%;
     /* padding: 10px 20px 30px 25px;  */
     padding: 0;
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
     align-items: center;
     transition: all .5s ease-out;
     line-height: 24px; 
@@ -273,6 +273,7 @@ p {
     margin: 0px;
     /* height: 8rem; */
     min-height: 8rem;
+    justify-content: space-evenly;
 }
 
 .nav-list {
@@ -286,7 +287,7 @@ ul.nav-list li {
     line-height: 3rem;
     position: relative;
     width: 100%;
-    word-spacing: 1.8px;
+    word-spacing: 1.6px;
 }
 
 .navbar-nav .active .nav-link,
@@ -807,11 +808,26 @@ li.move-right i {
 
 @media (max-width: 480px) {
 
+    .container-top {
+        background-color: var(--background-clr-b);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        background-color: #ed87f6;
+    }
+    
+
     .top-bar_content {
-        width: 60%;
-        margin-top: 5px;
+        width: 100%;
+        margin-top: px;
         margin-bottom: 5px;
         padding-top: 0px;
+        background: #0bbff6;
+        justify-content: center;
     }
 
     .top-bar_content i {
@@ -824,6 +840,15 @@ li.move-right i {
 
     .top-bar_content p {
         display: none;
+    }
+
+    .navbar-brand {
+        margin-left: 8px;
+    }
+
+    .titleName  {
+        font-size: var(--fs-6); 
+        color: var(--txt-clr-3);
     }
 
     ul.nav-list li {
@@ -853,7 +878,7 @@ li.move-right i {
         border: 2px solid #212529;
         box-shadow: 5px 5px #3e8e41; 
         max-width: 8em;
-        margin: 3em; 
+        margin: 75px 155px 37.5px 37.5px; 
     }
     
     .navbar-toggler i {
@@ -912,43 +937,62 @@ li.move-right i {
 }
 
 
-media (max-width: 375px) {
+@media (min-width: 375px) {
 
     .top-bar_content {
         width: 100%;
+        background: #3e8e41;
+        justify-content: space-around;
     }
 
-    top-bar_content a {
-        background-color: #87e4f6;
+    .top-bar_content i {
+        justify-content: space-around;
+        font-size: var(--fs-6);
     }
 
-    top-bar_content i {
-        color: var(--txt-clr-2);
-        padding-right: -2rem;
-        padding-left: -5rem;
-        margin-right: 3rem;
-        width: 10%;
-    }
-
-    top-bar_content p {
+    .top-bar_content p {
         display: none;
+    }
+
+    .navbar {
+        background-color: var(--background-clr-b); 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 100%;
+        z-index: 1000;
     }
 
     .cont-nav {
         width:100% ;
+        padding: 5px;
         background-color: #f48888;
     }
+
+    .titleName  {
+        font-size: 1.7rem; 
+        color: var(--txt-clr-3);
+    }
+
     .navbar-toggler {
-        padding: 5px;
+        margin: 3em; 
+    }
+
+    .navbar-toggler {
+        align-items: center;
+        justify-content: flex-end;
+        padding: 8px;
         margin-bottom: 5px;
-        max-width: 5em;
-        margin: 1em; 
+        border: 2px solid #212529;
+        box-shadow: 3px 3px #3e8e41; 
+        max-width: 3em;
     }
     
     .navbar-toggler i {
         font-size: 2rem; 
         font-weight: 600;
-        justify-self: start; 
+        justify-self: ; 
     } 
 
     .navbar-nav .active .nav-link,
@@ -959,21 +1003,21 @@ media (max-width: 375px) {
     }
 
     .sub-menu {
-        width: 14rem;
+        width: 16rem;
         margin-left: -11rem;
         margin-top: -1.6rem;
         background: #e5f687;
     }
 
     .sub-menu .subMenu {
-        width: 2rem;
-        margin-left: -8rem;
+        width: 20rem;
+        margin-left: -6.8rem;
         line-height: normal;
     }
 
     .sub-menu .subMenu-menu {
-        width: 20.5rem;
-        margin-left: 2.75rem;
+        width: 20rem;
+        margin-left: 1.3rem;
         line-height: normal;
     }
 
@@ -981,7 +1025,7 @@ media (max-width: 375px) {
         content: "";
         position: absolute;
         top: -2.5rem;
-        left: 9.55rem;
+        left: 10rem;
         border: 1.2rem solid transparent;
         border-bottom-color: #f60b0b;  
     }
@@ -989,7 +1033,7 @@ media (max-width: 375px) {
     .sub-menu .subMenu::before {
         content: "";
         position: absolute;
-        top: 3.5rem;
+        top: 2.5rem;
         left: -2.5rem;
         border: 1.2rem solid transparent;
         border-right-color: #f60b94;
@@ -998,8 +1042,8 @@ media (max-width: 375px) {
     .sub-menu .subMenu-menu::before {
         content: "";
         position: absolute;
-        top: 3rem;
-        left: -2.8rem;
+        top: 3.5rem;
+        left: -2.6rem;
         border: 1.2rem solid transparent;
         border-right-color: #0bbff6;
     }
