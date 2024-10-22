@@ -829,7 +829,7 @@ li.move-right i {
         height: 100%;
         z-index: 1000;
         background-color:#EFE7DA ;
-        background-color: aquamarine;
+        background-color: rgb(245, 66, 203);
     }
 
     .titleName {
@@ -913,7 +913,6 @@ li.move-right i {
     .sub-menu .subMenu-menu {
         margin-left: 4.5rem;
         margin-top: -14.5em;
-      
     }
 
     li.move-right {
@@ -928,3 +927,12 @@ li.move-right i {
         transition: background-color 650ms;
     }
 }
+
+/* @media (max-width: 380px) { 
+    .container-top {
+        margin: 0px;
+        padding: 0px;
+        background: #f89532;
+      
+    }
+} */
